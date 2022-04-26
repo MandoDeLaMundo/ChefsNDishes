@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\Products\\ChefsNDishes.csproj",
+  "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\Products\\Products.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14399,7 +14399,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "ChefsNDishes",
+  "RootNamespace": "Products",
   "Documents": [
     {
       "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\Products\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -14417,8 +14417,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\Products\\Views\\Chefs\\New.cshtml",
-      "TargetPath": "Views\\Chefs\\New.cshtml",
+      "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\Products\\Views\\Product\\New.cshtml",
+      "TargetPath": "Views\\Product\\New.cshtml",
       "FileKind": "mvc"
     },
     {
