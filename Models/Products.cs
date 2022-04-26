@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using static ChefsNDishes.CustomValidators;
 
-namespace ChefsNDishes.Models
+namespace Products.Models
 {
-    public class Chef
+    public class Product
     {
         [Key] // the below prop is the primary key, [Key] is not needed if named with pattern: ModelNameId
         public int ChefId { get; set; }
@@ -20,10 +19,6 @@ namespace ChefsNDishes.Models
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        [BirthDay]
-        [Required(ErrorMessage = "is required")]
-        [DataType(DataType.Date)]
-        public DateTime DOB { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;

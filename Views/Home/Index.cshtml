@@ -7,25 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/new">Add a Chef!</a>
+    <a href="/new">Add a Product!</a>
 
-    @using ChefsNDishes.Models;
-    @model List<Chef>;
+    @using Products.Models;
+    @model List<Product>;
 
     <table>
-        <thead>
-            <th>Name</th>
-            <th>Age</th>
-            <th># of Dishes</th>
-        </thead>
-        <tbody>
-            @* @foreach (Chef chef in Model)
-                {
-                    <tr>@chef.FullName()</tr>
-                    <tr>Age</tr>
-                    <tr>Number of dishes</tr>
-                } *@
-        </tbody>
+
     </table>
 </body>
 </html>

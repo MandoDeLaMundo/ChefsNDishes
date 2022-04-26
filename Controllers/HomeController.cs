@@ -5,15 +5,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ChefsNDishes.Models;
+using Products.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
-namespace ChefsNDishes.Controllers
+namespace Products.Controllers
 {
     public class HomeController : Controller
     {
-        private ChefsNDishesContext db;
+        private ProductsContext db;
 
         private int? uid
         {
@@ -22,7 +22,7 @@ namespace ChefsNDishes.Controllers
                 return HttpContext.Session.GetInt32("UserId");
             }
         }
-        public HomeController(ChefsNDishesContext context)
+        public HomeController(ProductsContext context)
         {
             db = context;
         }
@@ -30,7 +30,6 @@ namespace ChefsNDishes.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            // Chef chef = db.Chefs.ToList();
             return View("Index");
         }
 
@@ -45,7 +44,7 @@ namespace ChefsNDishes.Controllers
         }
 
         [HttpPost("/create")]
-        public IActionResult Create(Chef chef)
+        public IActionResult Create(Product product)
         {
             if (uid == null)
             {
@@ -57,8 +56,7 @@ namespace ChefsNDishes.Controllers
                 return View("New");
             }
 
-            chef.ChefId = (int)uid;
-            db.Chefs.Add(chef);
+            db.Products.Add(product);
             db.SaveChanges();
             return RedirectToAction("");
         }
