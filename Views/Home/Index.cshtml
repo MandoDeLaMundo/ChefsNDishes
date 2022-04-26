@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/new">Add a Chef!</a>
+
+    @using ChefsNDishes.Models;
+    @model List<Chef>;
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </thead>
+        <tbody>
+            @* @foreach (Chef chef in Model)
+                {
+                    <tr>@chef.FullName()</tr>
+                    <tr>Age</tr>
+                    <tr>Number of dishes</tr>
+                } *@
+        </tbody>
+    </table>
+</body>
+</html>
