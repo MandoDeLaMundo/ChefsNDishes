@@ -14417,11 +14417,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\ChefsNDishes\\Chefs\\New.cshtml",
-      "TargetPath": "Chefs\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\ChefsNDishes\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14429,11 @@
     {
       "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\ChefsNDishes\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\armti\\Desktop\\coding_dojo\\c#\\ORMs\\ChefsNDishes\\Views\\Chefs\\New.cshtml",
+      "TargetPath": "Views\\Chefs\\New.cshtml",
       "FileKind": "mvc"
     },
     {
